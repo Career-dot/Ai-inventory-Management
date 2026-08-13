@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing — RFPilot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Ambient background -->
+<div class="bg-glow bg-glow--purple" aria-hidden="true"></div>
+<div class="bg-glow bg-glow--teal" aria-hidden="true"></div>
+<div class="bg-noise" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="logo">
+      <span class="logo__mark">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <path d="M12 1L23 12L12 23L1 12L12 1Z" fill="url(#logoGrad)"/>
+          <defs>
+            <linearGradient id="logoGrad" x1="1" y1="1" x2="23" y2="23">
+              <stop offset="0" stop-color="#9b6bff"/>
+              <stop offset="1" stop-color="#2dd4bf"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+      RFPilot
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <div class="nav__item">
+        <button class="nav__link" data-page="platform">Platform <svg class="chev" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg></button>
+        <div class="nav__dropdown">
+          <a href="platform.html#drafting">Proposal Drafting</a>
+          <a href="platform.html#compliance">Compliance Matrix</a>
+          <a href="platform.html#win-themes">Win-Theme Engine</a>
+        </div>
+      </div>
+      <div class="nav__item">
+        <button class="nav__link" data-page="solutions">Solutions <svg class="chev" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg></button>
+        <div class="nav__dropdown">
+          <a href="solutions.html#gov">Government Bids</a>
+          <a href="solutions.html#enterprise">Enterprise Sales</a>
+          <a href="solutions.html#agencies">Agencies</a>
+        </div>
+      </div>
+      <a href="pricing.html" class="nav__link nav__link--plain" data-page="pricing">Pricing</a>
+      <a href="docs.html" class="nav__link nav__link--plain" data-page="docs">Docs</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a href="contact.html" class="btn btn--ghost btn--sm">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="currentColor"/></svg>
+        Book a Demo
+      </a>
+      <a href="contact.html" class="btn btn--primary btn--sm">Get Started</a>
+    </div>
+
+    <button class="nav__burger" id="burgerBtn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="page-hero">
+  <div class="badge" data-reveal><span class="badge__dot"></span> PRICING</div>
+  <h1 data-split data-reveal>Simple pricing, built to scale with your pipeline</h1>
+  <p data-reveal style="--delay:120ms">Start free. Upgrade when your proposal volume grows.</p>
+</section>
+
+<div class="pricing-toggle" data-reveal>
+  <span class="is-active" id="labelMonthly">Monthly</span>
+  <div class="switch" id="pricingSwitch" role="switch" aria-checked="false" tabindex="0" aria-label="Toggle yearly billing"><div class="switch__knob"></div></div>
+  <span id="labelYearly">Yearly</span>
+  <span class="save-tag">Save 20%</span>
+</div>
+
+<div class="pricing-grid" data-reveal-group>
+  <div class="price-card">
+    <span class="price-card__badge">STARTER</span>
+    <h3>Team</h3>
+    <p class="price-card__desc">For small proposal teams getting started with AI drafting.</p>
+    <div class="price-card__amount"><span class="num" data-monthly="99" data-yearly="79">$99</span><span class="period">/ seat / month</span></div>
+    <ul class="price-card__list">
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Up to 5 active RFPs / month</li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Compliance matrix generation</li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Shared content library</li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Email support</li>
+    </ul>
+    <a href="contact.html" class="btn btn--outline">Start Free Trial</a>
+  </div>
+
+  <div class="price-card price-card--featured">
+    <span class="price-card__badge">MOST POPULAR</span>
+    <h3>Growth</h3>
+    <p class="price-card__desc">For teams bidding regularly across multiple buyers.</p>
+    <div class="price-card__amount"><span class="num" data-monthly="249" data-yearly="199">$249</span><span class="period">/ seat / month</span></div>
+    <ul class="price-card__list">
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Unlimited active RFPs</li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Win-theme engine</li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Compliance matrix + gap alerts</li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Priority support &amp; onboarding</li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Custom brand voice</li>
+    </ul>
+    <a href="contact.html" class="btn btn--primary">Start Using Agent</a>
+  </div>
+
+  <div class="price-card">
+    <span class="price-card__badge">ENTERPRISE</span>
+    <h3>Enterprise</h3>
+    <p class="price-card__desc">For orgs with compliance, security, or procurement needs.</p>
+    <div class="price-card__amount"><span class="num">Custom</span></div>
+    <ul class="price-card__list">
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> SSO &amp; audit logs</li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Dedicated success manager</li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Custom integrations &amp; API access</li>
+      <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> On-prem / VPC deployment options</li>
+    </ul>
+    <a href="contact.html" class="btn btn--outline">Talk to Sales</a>
+  </div>
+</div>
+
+<section class="faq">
+  <div class="section__head" data-reveal>
+    <span class="eyebrow">FAQ</span>
+    <h2>Common questions</h2>
+  </div>
+
+  <div class="faq-item" data-reveal>
+    <div class="faq-item__q">Can I try RFPilot before paying? <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+    <div class="faq-item__a">Yes &mdash; every plan starts with a 14-day free trial, no credit card required. You can draft a full proposal from a real RFP before deciding.</div>
+  </div>
+  <div class="faq-item" data-reveal>
+    <div class="faq-item__q">What happens if I go over my RFP limit? <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+    <div class="faq-item__a">We'll let you know when you're close, and you can upgrade any time. You're never cut off mid-proposal.</div>
+  </div>
+  <div class="faq-item" data-reveal>
+    <div class="faq-item__q">Does RFPilot integrate with our existing tools? <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+    <div class="faq-item__a">Growth and Enterprise plans include integrations with common CRMs, procurement portals, and content repositories. Ask us about your specific stack.</div>
+  </div>
+  <div class="faq-item" data-reveal>
+    <div class="faq-item__q">Is our proposal content used to train shared models? <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+    <div class="faq-item__a">No. Your content library and drafts stay private to your workspace and are never used to train models shared across customers.</div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <a href="#top" class="logo">
+      <span class="logo__mark">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 1L23 12L12 23L1 12L12 1Z" fill="url(#logoGrad3)"/><defs><linearGradient id="logoGrad3" x1="1" y1="1" x2="23" y2="23"><stop offset="0" stop-color="#9b6bff"/><stop offset="1" stop-color="#2dd4bf"/></linearGradient></defs></svg>
+      </span>
+      RFPilot
+    </a>
+    <div class="footer__links">
+      <div>
+        <h4>Product</h4>
+        <a href="platform.html">Platform</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="pricing.html">Pricing</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="contact.html">Contact</a>
+        <a href="#">Careers</a>
+        <a href="#">About</a>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <a href="docs.html">Docs</a>
+        <a href="#">Blog</a>
+        <a href="#">Security</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>© 2026 RFPilot. All rights reserved to CSOFT System (Powered by CSOFT System).</p>
+  </div>
+</footer>
+
+<!-- Demo modal -->
+<div class="modal" id="demoModal" aria-hidden="true">
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__box" role="dialog" aria-label="Demo video">
+    <button class="modal__close" data-close aria-label="Close">✕</button>
+    <div class="modal__placeholder">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M6 3L20 12L6 21V3Z" fill="currentColor"/></svg>
+      <p>Demo video goes here</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

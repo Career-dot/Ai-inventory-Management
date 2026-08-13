@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solutions — RFPilot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Ambient background -->
+<div class="bg-glow bg-glow--purple" aria-hidden="true"></div>
+<div class="bg-glow bg-glow--teal" aria-hidden="true"></div>
+<div class="bg-noise" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="logo">
+      <span class="logo__mark">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+          <path d="M12 1L23 12L12 23L1 12L12 1Z" fill="url(#logoGrad)"/>
+          <defs>
+            <linearGradient id="logoGrad" x1="1" y1="1" x2="23" y2="23">
+              <stop offset="0" stop-color="#9b6bff"/>
+              <stop offset="1" stop-color="#2dd4bf"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+      RFPilot
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <div class="nav__item">
+        <button class="nav__link">Platform <svg class="chev" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg></button>
+        <div class="nav__dropdown">
+          <a href="platform.html#drafting">Proposal Drafting</a>
+          <a href="platform.html#compliance">Compliance Matrix</a>
+          <a href="platform.html#win-themes">Win-Theme Engine</a>
+        </div>
+      </div>
+      <div class="nav__item">
+        <button class="nav__link">Solutions <svg class="chev" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/></svg></button>
+        <div class="nav__dropdown">
+          <a href="solutions.html#gov">Government Bids</a>
+          <a href="solutions.html#enterprise">Enterprise Sales</a>
+          <a href="solutions.html#agencies">Agencies</a>
+        </div>
+      </div>
+      <a href="pricing.html" class="nav__link nav__link--plain" data-page="pricing">Pricing</a>
+      <a href="docs.html" class="nav__link nav__link--plain" data-page="docs">Docs</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a href="contact.html" class="btn btn--ghost btn--sm">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="currentColor"/></svg>
+        Book a Demo
+      </a>
+      <a href="contact.html" class="btn btn--primary btn--sm">Get Started</a>
+    </div>
+
+    <button class="nav__burger" id="burgerBtn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="page-hero">
+  <div class="badge" data-reveal><span class="badge__dot"></span> SOLUTIONS</div>
+  <h1 data-split data-reveal>Built for how your team actually bids</h1>
+  <p data-reveal style="--delay:120ms">Whichever kind of buyer you respond to, RFPilot adapts to the format, tone, and evidence they expect.</p>
+</section>
+
+<section class="solutions" style="padding-top:20px;">
+  <div class="solution-row" id="gov">
+    <div class="solution-row__visual solution-card reveal">
+      <div class="solution-card__inner">
+        <div class="solution-card__num">GOV</div>
+        <div class="solution-card__label">Government Bids</div>
+      </div>
+    </div>
+    <div class="reveal">
+      <span class="solution-row__tag">GOVERNMENT BIDS</span>
+      <h3>Section-by-section compliance, without the headcount</h3>
+      <p>RFPilot is built for rigid government formats &mdash; SF-33s, Section L/M structures, and strict page limits &mdash; so your team can bid on more solicitations without adding proposal staff.</p>
+      <ul class="solution-row__list">
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Maps directly to Section L instructions and M criteria</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Page-limit aware drafting</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Full audit trail for contracting officers</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="solution-row reverse" id="enterprise">
+    <div class="reveal">
+      <span class="solution-row__tag">ENTERPRISE SALES</span>
+      <h3>Answer every vendor questionnaire without slowing down deals</h3>
+      <p>Security questionnaires, procurement RFPs, and vendor risk assessments get first drafts the same day they land &mdash; keeping your sales cycle moving instead of waiting on legal or security review.</p>
+      <ul class="solution-row__list">
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Syncs with your security &amp; trust center content</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Handles Excel-based vendor questionnaires natively</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Routes sensitive answers to the right reviewer</li>
+      </ul>
+    </div>
+    <div class="solution-row__visual solution-card reveal">
+      <div class="solution-card__inner">
+        <div class="solution-card__num">B2B</div>
+        <div class="solution-card__label">Enterprise Sales</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="solution-row" id="agencies">
+    <div class="solution-row__visual solution-card reveal">
+      <div class="solution-card__inner">
+        <div class="solution-card__num">∞</div>
+        <div class="solution-card__label">Agencies</div>
+      </div>
+    </div>
+    <div class="reveal">
+      <span class="solution-row__tag">AGENCIES</span>
+      <h3>Pitch more clients without a bigger proposals team</h3>
+      <p>Agencies use RFPilot to respond to a higher volume of client RFPs &mdash; reusing case studies and credentials automatically for every new pitch, so writers spend their time on the strategy that actually wins pitches.</p>
+      <ul class="solution-row__list">
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Client-specific brand voice per workspace</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Reusable case-study and credentials library</li>
+        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 12L9 17L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Handles multiple concurrent pitches per team</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="cta">
+  <div class="cta__box" data-reveal>
+    <h2>Find the right fit for your team</h2>
+    <p>Tell us how you bid today &mdash; we'll show you exactly where RFPilot slots in.</p>
+    <div class="hero__cta hero__cta--center">
+      <a href="contact.html" class="btn btn--primary btn--lg">Talk to Sales</a>
+      <a href="platform.html" class="btn btn--outline btn--lg">Explore Platform</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <a href="#top" class="logo">
+      <span class="logo__mark">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 1L23 12L12 23L1 12L12 1Z" fill="url(#logoGrad3)"/><defs><linearGradient id="logoGrad3" x1="1" y1="1" x2="23" y2="23"><stop offset="0" stop-color="#9b6bff"/><stop offset="1" stop-color="#2dd4bf"/></linearGradient></defs></svg>
+      </span>
+      RFPilot
+    </a>
+    <div class="footer__links">
+      <div>
+        <h4>Product</h4>
+        <a href="platform.html">Platform</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="pricing.html">Pricing</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="contact.html">Contact</a>
+        <a href="#">Careers</a>
+        <a href="#">About</a>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <a href="docs.html">Docs</a>
+        <a href="#">Blog</a>
+        <a href="#">Security</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>© 2026 RFPilot. All rights reserved to CSOFT System (Powered by CSOFT System).</p>
+  </div>
+</footer>
+
+<!-- Demo modal -->
+<div class="modal" id="demoModal" aria-hidden="true">
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__box" role="dialog" aria-label="Demo video">
+    <button class="modal__close" data-close aria-label="Close">✕</button>
+    <div class="modal__placeholder">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none"><path d="M6 3L20 12L6 21V3Z" fill="currentColor"/></svg>
+      <p>Demo video goes here</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
