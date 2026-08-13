@@ -1,0 +1,46 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid #e5e7eb;
+  }
+
+  .mesh-gradient {
+    background: radial-gradient(at 0% 0%, rgba(53, 37, 205, 0.05) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(0, 108, 73, 0.05) 0px, transparent 50%);
+  }
+.auth-gradient-bg {
+    background: linear-gradient(135deg, #3525cd 0%, #4f46e5 55%, #006c49 100%);
+  }
+  .nav-underline {
+    position: relative;
+  }
+  .nav-underline::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 50%;
+    background: #3525cd;
+    transition: all 0.2s ease-in-out;
+    transform: translateX(-50%);
+  }
+  .nav-underline:hover::after,
+  .nav-underline.active::after {
+    width: 100%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
