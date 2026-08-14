@@ -33,7 +33,7 @@ function Footer() {
       </div>
       <div className="max-w-container-max mx-auto px-gutter mt-xl pt-lg border-t border-outline/30 flex flex-col md:flex-row justify-between items-center gap-md">
         <p className="font-body-sm text-surface-dim/70">
-          © {new Date().getFullYear()} StockPilot AI. All rights reserved.
+          © {new Date().getFullYear()} StockPilot AI. All rights reserved to CSOFT System (Powered by CSOFT System).
         </p>
         <div className="flex gap-md opacity-80 hover:opacity-100 transition-opacity">
           <div className="w-6 h-6 bg-surface-dim/50 rounded-full" />
