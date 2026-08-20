@@ -144,10 +144,10 @@ function About() {
             required.
           </p>
           <div className="relative z-10 flex flex-col sm:flex-row justify-center gap-sm">
-            <button className="bg-secondary text-on-secondary px-md py-2 text-sm rounded-lg font-bold hover:scale-105 transition-transform shadow-md">
+            <button className="bg-secondary text-on-secondary px-md py-2 text-sm rounded-lg font-bold border-2 border-secondary hover:bg-white hover:text-secondary hover:shadow-lg hover:shadow-secondary/30 hover:-translate-y-0.5 transition-all">
               Start Free Trial
             </button>
-            <button className="bg-transparent border border-on-primary text-on-primary px-md py-2 text-sm rounded-lg font-bold hover:bg-white/10 transition-colors">
+            <button className="bg-transparent border border-on-primary text-on-primary px-md py-2 text-sm rounded-lg font-bold hover:bg-white hover:text-primary hover:border-white hover:shadow-lg hover:-translate-y-0.5 transition-all">
               Book a Demo
             </button>
           </div>

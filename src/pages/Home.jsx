@@ -1,6 +1,7 @@
 // src/pages/Home.jsx
 import Button from "../components/Button";
 import StatCounter from "../components/StatCounter";
+import HeroDashboard from "../components/HeroDashboard";
 
 // Icons imports (agar aapne ye images public folder mein rakhi hain)
 import aiDemandImg from "../assets/Ai demand forecasting.png";
@@ -29,39 +30,44 @@ function Home() {
           </div>
         </div>
 
-        <div className="relative max-w-5xl mx-auto mt-xl animate-floating">
-          <div className="glass-card rounded-xl overflow-hidden shadow-2xl p-4 md:p-8">
-            <div
-              className="w-full aspect-video bg-cover bg-center rounded-lg shadow-inner"
-              style={{
-                backgroundImage:
-                  "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDQoFvwSe7FJV-kO8JbS4t2kLGyYllLk2Eta0_XPn4AMXVJ88RKBbraj88n0pNVTb33zO9_dS4T8_T6zGonV9_seREFw0R_5n29wnuYAuD1npCKUZw7yImBJX4IPq9lZXEyUaWef9-L6rLOkxrzS-kA768u_Xrpwd40b_6WxUJSEOcPfSCEA5tPDmUrmQF69yEy0vAHqlpVULFabu4Ire1e7z4tRgvWxNHHYsUGyMXz8w7CVgPcG3rY')",
-              }}
-            >
-              <div className="absolute top-12 left-12 p-4 glass-card rounded-lg hidden md:block">
-                <div className="flex items-center gap-sm">
-                  <span className="material-symbols-outlined text-secondary">trending_up</span>
-                  <span className="font-body-sm font-bold text-on-surface">Demand Up 12%</span>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="relative max-w-2xl mx-auto mt-lg animate-floating">
+          <HeroDashboard />
           <div className="absolute -top-12 -right-12 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10" />
           <div className="absolute -bottom-12 -left-12 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -z-10" />
         </div>
       </section>
 
       {/* Trust row */}
-      <section className="py-xl bg-surface-container-low">
+      <section
+        className="py-xl bg-surface-container-low relative"
+        style={{
+          boxShadow:
+            "inset 0 8px 12px -6px rgba(27,27,36,0.28), inset 0 -8px 12px -6px rgba(27,27,36,0.28)",
+        }}
+      >
         <div className="max-w-container-max mx-auto px-gutter text-center">
           <p className="font-eyebrow text-eyebrow text-on-surface-variant uppercase tracking-widest mb-lg">
             Integrated with your favorite tools
           </p>
-          <div className="flex flex-wrap justify-center items-center gap-xl opacity-60 hover:opacity-100 transition-opacity">
-            <div className="h-8 w-32 bg-on-surface-variant/20 rounded" />
-            <div className="h-8 w-32 bg-on-surface-variant/20 rounded" />
-            <div className="h-8 w-32 bg-on-surface-variant/20 rounded" />
-            <div className="h-8 w-32 bg-on-surface-variant/20 rounded" />
+          <div className="flex flex-wrap justify-center items-center gap-xl opacity-70 hover:opacity-100 transition-opacity">
+            {[
+              { icon: "shopping_bag", name: "Shopify" },
+              { icon: "storefront", name: "Amazon" },
+              { icon: "calculate", name: "QuickBooks" },
+              { icon: "hub", name: "SAP" },
+            ].map((tool) => (
+              <div
+                key={tool.name}
+                className="h-10 px-md flex items-center gap-xs bg-surface-container-lowest rounded-lg border border-outline-variant/40"
+              >
+                <span className="material-symbols-outlined text-primary text-lg">
+                  {tool.icon}
+                </span>
+                <span className="font-body-sm font-bold text-on-surface-variant">
+                  {tool.name}
+                </span>
+              </div>
+            ))}
           </div>
           <div className="mt-lg flex justify-center gap-lg">
             <div className="flex items-center gap-xs text-on-surface-variant">
@@ -99,11 +105,35 @@ function Home() {
       </section>
 
       {/* Stats */}
-      <section className="py-xl bg-inverse-surface text-surface">
-        <div className="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-3 gap-xl text-center">
-          <StatCounter target={30} suffix="%" label="fewer stockouts" />
-          <StatCounter target={25} suffix="%" label="reduced carrying costs" />
-          <StatCounter target={100} suffix="%" label="real-time accuracy" />
+      <section className="py-xl px-gutter max-w-container-max mx-auto">
+        <div
+          className="relative rounded-2xl overflow-hidden bg-inverse-surface text-surface shadow-2xl"
+          style={{
+            boxShadow:
+              "0 20px 40px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.12), inset 0 -1px 0 rgba(0,0,0,0.35), inset 1px 0 0 rgba(255,255,255,0.06), inset -1px 0 0 rgba(0,0,0,0.25)",
+          }}
+        >
+          {/* subtle glow accents */}
+          <div className="absolute -top-16 -left-16 w-72 h-72 bg-white/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-16 -right-16 w-72 h-72 bg-surface-dim/20 rounded-full blur-3xl pointer-events-none" />
+
+          <div className="relative py-[96px] px-xl grid grid-cols-1 md:grid-cols-3 text-center">
+            <div className="px-lg py-md md:py-0">
+              <StatCounter target={30} suffix="%" label="fewer stockouts" />
+            </div>
+            <div
+              className="px-lg py-md md:py-0 md:border-x md:border-surface/15"
+              style={{
+                boxShadow:
+                  "inset 1px 0 0 rgba(255,255,255,0.08), inset -1px 0 0 rgba(0,0,0,0.3)",
+              }}
+            >
+              <StatCounter target={25} suffix="%" label="reduced carrying costs" />
+            </div>
+            <div className="px-lg py-md md:py-0">
+              <StatCounter target={100} suffix="%" label="real-time accuracy" />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -150,10 +180,10 @@ function Home() {
             dominate their market.
           </p>
           <div className="relative z-10 flex flex-col sm:flex-row justify-center gap-sm">
-            <button className="bg-secondary text-on-secondary px-md py-2 text-sm rounded-lg font-bold hover:scale-105 transition-transform shadow-md">
+            <button className="bg-secondary text-on-secondary px-md py-2 text-sm rounded-lg font-bold border-2 border-secondary hover:bg-white hover:text-secondary hover:shadow-lg hover:shadow-secondary/30 hover:-translate-y-0.5 transition-all">
               Start Free Trial
             </button>
-            <button className="bg-transparent border border-on-primary text-on-primary px-md py-2 text-sm rounded-lg font-bold hover:bg-white/10 transition-colors">
+            <button className="bg-transparent border border-on-primary text-on-primary px-md py-2 text-sm rounded-lg font-bold hover:bg-white hover:text-primary hover:border-white hover:shadow-lg hover:-translate-y-0.5 transition-all">
               Book a Demo
             </button>
           </div>

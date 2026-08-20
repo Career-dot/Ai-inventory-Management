@@ -1,6 +1,4 @@
 // src/pages/Features.jsx
-import strainIcon from "../assets/strain.png";
-import solutionIcon from "../assets/solution.png";
 import globeIcon from "../assets/globe.png";
 import locationIcon from "../assets/location.png";
 
@@ -27,7 +25,7 @@ function Features() {
           workflows, StockPilot AI turns complex data into seamless execution.
         </p>
         <div className="flex flex-col md:flex-row gap-md justify-center">
-          <button className="bg-primary text-on-primary px-xl py-4 rounded-xl font-bold shadow-lg hover:shadow-primary/20 transition-all">
+          <button className="bg-primary text-on-primary px-xl py-4 rounded-xl font-bold shadow-lg border-2 border-primary hover:bg-white hover:text-primary hover:shadow-primary/20 hover:-translate-y-0.5 transition-all">
             Watch Demo
           </button>
           <button className="border border-outline text-on-surface px-xl py-4 rounded-xl font-bold hover:bg-surface-container transition-all">
@@ -210,7 +208,7 @@ function Features() {
               to changing lead times and surge periods, ensuring you're alerted exactly when
               needed—not too late, and never too early.
             </p>
-            <button className="bg-secondary text-on-secondary px-8 py-3 rounded-xl font-bold hover:bg-secondary/90 transition-all">
+            <button className="bg-secondary text-on-secondary px-8 py-3 rounded-xl font-bold border-2 border-secondary hover:bg-white hover:text-secondary hover:shadow-lg hover:shadow-secondary/30 hover:-translate-y-0.5 transition-all">
               Configure Alerts
             </button>
           </div>

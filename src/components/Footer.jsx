@@ -31,15 +31,10 @@ function Footer() {
           <a className="font-body-sm text-surface-dim/70 hover:text-surface-container-lowest transition-colors" href="#">Terms of Service</a>
         </div>
       </div>
-      <div className="max-w-container-max mx-auto px-gutter mt-xl pt-lg border-t border-outline/30 flex flex-col md:flex-row justify-between items-center gap-md">
-        <p className="font-body-sm text-surface-dim/70">
-          © {new Date().getFullYear()} StockPilot AI. All rights reserved to CSOFT System (Powered by CSOFT System).
+      <div className="max-w-container-max mx-auto px-gutter mt-xl pt-lg border-t border-outline/30 flex justify-center items-center">
+        <p className="font-body-sm text-[11px] text-surface-dim/70 text-center">
+          ©{new Date().getFullYear()} StockPilot AI. All rights reserved to CSOFT System. Powered by CSOFT System.
         </p>
-        <div className="flex gap-md opacity-80 hover:opacity-100 transition-opacity">
-          <div className="w-6 h-6 bg-surface-dim/50 rounded-full" />
-          <div className="w-6 h-6 bg-surface-dim/50 rounded-full" />
-          <div className="w-6 h-6 bg-surface-dim/50 rounded-full" />
-        </div>
       </div>
     </footer>
   );

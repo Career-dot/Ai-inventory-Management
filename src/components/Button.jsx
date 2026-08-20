@@ -5,9 +5,9 @@ function Button({ children, variant = "primary", className = "", ...props }) {
 
   const variants = {
     accent:
-      "bg-secondary text-on-secondary shadow-md hover:brightness-110 hover:scale-105",
+      "bg-secondary text-on-secondary shadow-md border-2 border-secondary hover:bg-white hover:text-secondary hover:shadow-lg hover:shadow-secondary/30 hover:-translate-y-0.5",
     primary:
-      "border-2 border-primary text-primary hover:bg-primary/5",
+      "border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-on-primary hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-0.5",
     ghost:
       "text-primary hover:opacity-80",
     onDark:

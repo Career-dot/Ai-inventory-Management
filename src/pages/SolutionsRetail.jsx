@@ -26,7 +26,7 @@ function SolutionsRetail() {
             </p>
 
             <div className="flex flex-wrap gap-sm pt-sm">
-              <button className="bg-primary text-on-primary px-lg py-4 rounded-xl font-bold text-body-lg hover:shadow-lg transition-all">
+              <button className="bg-primary text-on-primary px-lg py-4 rounded-xl font-bold text-body-lg border-2 border-primary hover:bg-white hover:text-primary hover:shadow-lg hover:-translate-y-0.5 transition-all">
                 Get Started
               </button>
               <button className="flex items-center gap-2 border border-outline px-lg py-4 rounded-xl font-bold text-body-lg hover:bg-surface-container transition-all">
@@ -375,10 +375,10 @@ function SolutionsRetail() {
            Join 500+ retailers who have reclaimed their time and increased their profits with StockPilot AI.
           </p>
           <div className="relative z-10 flex flex-col sm:flex-row justify-center gap-sm">
-            <button className="bg-secondary text-on-secondary px-md py-2 text-sm rounded-lg font-bold hover:scale-105 transition-transform shadow-md">
+            <button className="bg-secondary text-on-secondary px-md py-2 text-sm rounded-lg font-bold border-2 border-secondary hover:bg-white hover:text-secondary hover:shadow-lg hover:shadow-secondary/30 hover:-translate-y-0.5 transition-all">
               Start Free Trial
             </button>
-            <button className="bg-transparent border border-on-primary text-on-primary px-md py-2 text-sm rounded-lg font-bold hover:bg-white/10 transition-colors">
+            <button className="bg-transparent border border-on-primary text-on-primary px-md py-2 text-sm rounded-lg font-bold hover:bg-white hover:text-primary hover:border-white hover:shadow-lg hover:-translate-y-0.5 transition-all">
               Book a Demo
             </button>
           </div>

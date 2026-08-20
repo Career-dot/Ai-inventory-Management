@@ -125,7 +125,7 @@ function Pricing() {
               ))}
             </ul>
             <div className="flex justify-center">
-              <button className="bg-secondary text-on-secondary px-lg py-2 text-sm rounded-xl font-bold hover:scale-105 transition-transform shadow-md">
+              <button className="bg-secondary text-on-secondary px-lg py-2 text-sm rounded-xl font-bold border-2 border-secondary hover:bg-white hover:text-secondary hover:shadow-lg hover:shadow-secondary/30 hover:-translate-y-0.5 transition-all">
                 Get Started
               </button>
             </div>
@@ -222,10 +222,10 @@ function Pricing() {
               inventory by 40%.
             </p>
             <div className="flex flex-col sm:flex-row gap-sm justify-center">
-              <button className="bg-secondary text-on-secondary px-md py-2 text-sm rounded-lg font-bold hover:scale-105 transition-transform shadow-md">
+              <button className="bg-secondary text-on-secondary px-md py-2 text-sm rounded-lg font-bold border-2 border-secondary hover:bg-white hover:text-secondary hover:shadow-lg hover:shadow-secondary/30 hover:-translate-y-0.5 transition-all">
                 Start Free Trial
               </button>
-              <button className="bg-primary-container text-on-primary-container px-md py-2 text-sm rounded-lg font-bold hover:bg-on-primary-container hover:text-primary-container transition-colors border border-on-primary-container">
+              <button className="bg-white text-primary px-md py-2 text-sm rounded-lg font-bold border border-white hover:bg-primary hover:text-on-primary hover:shadow-lg hover:-translate-y-0.5 transition-all">
                 Book a Demo
               </button>
             </div>
